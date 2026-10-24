@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AROMA | Perfumes</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <a href="#inicio" class="logo">
+        AROMA <span>PERFUMES</span>
+    </a>
+
+    <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#productos">Productos</a>
+        <a href="#ofertas">Ofertas</a>
+    </nav>
+
+    <div class="header-acciones">
+        <input
+            type="search"
+            id="buscador"
+            placeholder="Buscar perfumes..."
+        >
+
+        <button id="btnCarrito" class="btn-carrito">
+            🛒 <span id="contadorCarrito">0</span>
+        </button>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero" id="inicio">
+        <div class="hero-contenido">
+            <p class="subtitulo">FRAGANCIAS ORIGINALES</p>
+            <h1>Tu esencia,<br>tu historia.</h1>
+            <p>
+                Descubrí las mejores fragancias
+                para cada ocasión.
+            </p>
+            <a href="#productos" class="btn-blanco">
+                Ver productos →
+            </a>
+        </div>
+    </section>
+
+    <section class="beneficios">
+        <div>🚚 <strong>Envíos a todo el país</strong></div>
+        <div>💳 <strong>Hasta 3 cuotas sin interés</strong></div>
+        <div>✓ <strong>Perfumes originales</strong></div>
+        <div>☎ <strong>Atención personalizada</strong></div>
+    </section>
+
+    <section class="categorias contenedor" id="categorias">
+        <article class="categoria categoria-hombre">
+            <h2>Perfumes<br>Hombres</h2>
+            <button data-categoria="Hombre" class="btn-categoria">
+                Ver colección →
+            </button>
+        </article>
+
+        <article class="categoria categoria-mujer">
+            <h2>Perfumes<br>Mujeres</h2>
+            <button data-categoria="Mujer" class="btn-categoria">
+                Ver colección →
+            </button>
+        </article>
+    </section>
+
+    <section class="productos-seccion contenedor" id="productos">
+        <div class="seccion-titulo">
+            <h2>Productos destacados</h2>
+            <button id="verTodos">Ver todos →</button>
+        </div>
+
+        <div class="grid-productos" id="contenedorProductos">
+        </div>
+    </section>
+
+    <section class="ofertas contenedor" id="ofertas">
+        <div>
+            <p>OFERTAS ESPECIALES</p>
+            <h2>Hasta 30% OFF</h2>
+            <span>En fragancias seleccionadas</span>
+        </div>
+        <a href="#productos" class="btn-blanco">
+            Ver productos →
+        </a>
+    </section>
+
+</main>
+
+<aside class="carrito-panel" id="panelCarrito">
+    <div class="carrito-header">
+        <h2>Tu carrito</h2>
+        <button id="cerrarCarrito" aria-label="Cerrar carrito">✕</button>
+    </div>
+
+    <div id="listaCarrito"></div>
+
+    <div class="carrito-footer">
+        <h3>Total: <span id="totalCarrito">$0</span></h3>
+        <button id="finalizarCompra">
+            Pedir por WhatsApp
+        </button>
+    </div>
+</aside>
+
+<div id="overlay" class="overlay"></div>
+
+<footer>
+    <h2>AROMA PERFUMES</h2>
+    <p>Encontrá tu próxima fragancia.</p>
+    <p>© 2026 Aroma Perfumes</p>
+</footer>
+
+</body>
+</html>
